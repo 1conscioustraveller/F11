@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .button-light {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .button-light:hover {
+            background: white;
+            color: #333;
+        }
+        
+        /* Experience Section */
+        .experience {
+            padding: 100px 20px;
+            background: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .centered-title {
+            text-align: center;
+        }
+        
+        .experience > p {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .experience-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .experience-step {
+            flex: 1;
+            min-width: 250px;
+            max-width: 270px;
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .experience-step:hover {
+            transform: translateY(-10px);
+        }
+        
+        .step-number {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+        
+        .step-icon {
+            font-size: 2.5rem;
+            color: #b89d7a;
+            margin-bottom: 20px;
+        }
+        
+        .experience-step h3 {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .experience-step p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .button {
+                display: block;
+                margin: 10px auto;
+                max-width: 200px;
+            }
+            
+            .experience-step {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Timeless Photography for Discerning Souls</h1>
+            <p>Where artistry meets emotion, creating heirlooms that transcend generations.</p>
+            <a href="#portfolio" class="button button-light">View Portfolio</a>
+            <a href="#contact" class="button button-light">Begin Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <h2 class="section-title centered-title">The Élégance Experience</h2>
+        <p style="max-width: 700px; margin: 0 auto;">A bespoke journey designed for those who appreciate the art of photography and seek an exceptional, personalized experience from conception to delivery.</p>
+        <div class="experience-steps">
+            <div class="experience-step">
+                <div class="step-number">01</div>
+                <div class="step-icon"><i class="fas fa-glass-cheers"></i></div>
+                <h3>Initial Consultation</h3>
+                <p>We begin with an intimate conversation to understand your vision, style, and aspirations for your photography experience.</p>
+            </div>
+            <div class="experience-step">
+                <div class="step-number">02</div>
+                <div class="step-icon"><i class="fas fa-pen-fancy"></i></div>
+                <h3>Creative Direction</h3>
+                <p>Together, we craft a personalized concept, selecting locations, styling, and artistic approaches that reflect your unique story.</p>
+            </div>
+            <div class="experience-step">
+                <div class="step-number">03</div>
+                <div class="step-icon"><i class="fas fa-camera"></i></div>
+                <h3>The Session</h3>
+                <p>Experience a seamless, joyful photoshoot where you can be fully present while I capture authentic, emotion-filled moments.</p>
+            </div>
+            <div class="experience-step">
+                <div class="step-number">04</div>
+                <div class="step-icon"><i class="fas fa-gem"></i></div>
+                <h3>Artisan Delivery</h3>
+                <p>Receive your curated collection of heirloom-quality images, presented in bespoke packaging designed to be treasured.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
